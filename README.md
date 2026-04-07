@@ -3,3 +3,4 @@
 ## Integrantes
 - Agustina Vasquez
 - Jonatan Fernando Calapeña Zarate
+- Juan Ignacio Arze
