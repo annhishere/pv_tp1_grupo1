@@ -2,3 +2,4 @@
 
 ## Integrantes
 - Agustina Vasquez
+- Jonatan Fernando Calapeña Zarate
