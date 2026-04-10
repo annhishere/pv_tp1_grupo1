@@ -4,3 +4,4 @@
 - Agustina Vasquez
 - Jonatan Fernando Calapeña Zarate
 - Juan Ignacio Arze
+- Esteban Sergio Vera
