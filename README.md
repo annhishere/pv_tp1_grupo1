@@ -5,3 +5,4 @@
 - Jonatan Fernando Calapeña Zarate
 - Juan Ignacio Arze
 - Esteban Sergio Vera
+- Sol Daiana Pizarro
