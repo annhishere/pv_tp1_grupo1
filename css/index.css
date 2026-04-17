@@ -8,6 +8,7 @@ section h2 {
 /*Seccion de estadisticas*/
 #states {
     margin-bottom: 20px;
+    text-align: center;
 }
 #states div {
     display: flex;
@@ -26,13 +27,26 @@ section h2 {
     font-size: 2rem;
     margin: 15px;
 }
+#states img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 /*Seccion de Novedades*/
 #news {
     margin-bottom: 30px;
+    text-align: center;
+}
+#news ul {
+    list-style-position: inside;
+    padding: 0;
 }
 #news li{
     margin: 5px;
 }
+
 /*Seccion de Objetivos*/
 #index-goals {
     display: flex;
@@ -45,4 +59,19 @@ section h2 {
 }
 .goal li{
     margin: 5px;
+}
+/*FOOTER*/
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer section {
+    margin-bottom: 10px;
+}
+footer p {
+    margin: 0;
 }
