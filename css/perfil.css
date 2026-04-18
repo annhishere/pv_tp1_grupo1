@@ -1,0 +1,118 @@
+/* Estilos para el perfil del usuario */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(189, 93%, 34%);
+    color: #000000;
+}
+
+header {
+    background-color: #2b03dc;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #f5f1f1;
+}
+
+nav {
+    background: linear-gradient(to right, #ee0202, #b80000); /* degradado rojo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav {
+    margin: 20px;       /* para q no se pegue al borde */
+    border-radius: 10px;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.container_perfil {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 70px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container_datos {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; /* Aumenta el ancho */
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 100px; /* Aumenta el padding */
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container_datos a {
+    display: flex;
+    color: #ee0202;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.container_datos a:hover {
+    text-decoration: underline;
+}
+img {
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+
+    display: block;        /*  CLAVE */
+    margin: 0 auto 20px;   /* centra y agrega espacio abajo */
+}
+
+.datos {
+    max-width: 450px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.datos p {
+    font-size: 1.2rem;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
