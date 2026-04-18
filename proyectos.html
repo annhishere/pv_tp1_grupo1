@@ -2,101 +2,121 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
+    
+    <link rel="stylesheet" href="css/proyecto.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #90b5da 0%, #E2E8F0 100%);
+            min-height: 100vh; 
+            margin: 0;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Gestión de Proyectos Educativos</h1>
-        <nav>
-            <a href="index.html">Inicio</a> | 
-            <a href="proyectos.html">Proyectos</a> | 
-            <a href="perfil.html">Mi Perfil</a>
+        <nav class="top-nav" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="public/logo.png" alt="logo" height="30px"> 
+                <p>Gestión de Proyectos</p> 
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a> 
+                <a href="perfil.html">Perfil</a> 
+                <a href="proyectos.html" class="active">Proyectos</a> 
+
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Explorador de Proyectos</h2>
+    <main id="contenido-principal">
+        <section class="titulo_principal">
+            <h1>Transformando ideas en realidad</h1>
+            <p class="descripcion-inicio">El espacio de trabajo estático de nuestro equipo. Explora nuestro repositorio de proyectos, revisa el estado de cada trabajo práctico y navega por las diferentes categorías de nuestro aprendizaje.</p>
+        </section>
 
-        <aside>
-            <h3>Filtrar por:</h3>
-            <form>
-                <label>Categoría:</label>
-                <select>
-                    <option>Programación</option>
-                    <option>Diseño</option>
-                    <option>Educación</option>
+        <section id="filtros">
+            <form class="categorias">
+                <select name="categoria">
+                    <option value="" disabled selected>Categoría...</option>
+                    <option value="programacion">Programación</option>
+                    <option value="diseno">Diseño</option>
+                    <option value="educacion">Educación</option>
                 </select>
 
-                <label>Año:</label>
-                <input type="number" placeholder="2026" min="2023" max="2026">
-                <label>Estado:</label>
-                <select>
-                    <option>En curso</option>
-                    <option>Finalizado</option>
+                <input type="number" placeholder="Año (ej. 2026)" min="2023" max="2026">
+
+                <select name="estado">
+                    <option value="" disabled selected>Estado...</option>
+                    <option value="curso">En curso</option>
+                    <option value="finalizado">Finalizado</option>
                 </select>
                 
-                <button type="button">Buscar</button>
+                <button type="button" class="btn-filtrar">Filtrar</button>
             </form>
-        </aside>
-
-        <br>
-
-        <section>
-            <h3>Resultados</h3>
-
-            <article>
-                <h4>Sistema de gestión de biblioteca</h4>
-                <img src="public/biblioteca.avif" alt="foto proyecto 1" width="200">
-                <p>Trabajo práctico donde se desarrolló un sistema básico para registrar libros y préstamos.</p>
-                <p>Categoría: Programación</p>
-                <a href="detalle.html">Ver detalle</a>
-            </article>
-            <hr>
-
-            <article>
-                <h4>Aplicación para organización de tareas</h4>
-                <img src="public/tareas.jpg" alt="foto proyecto 2" width="200">
-                <p>Aplicación sencilla pensada para anotar tareas y fechas de entrega.</p>
-                <p>Categoría: Programación</p>
-                <a href="detalle.html">Ver detalle</a>
-            </article>
-            <hr>
-
-            <article>
-                <h4>Sitio web institucional</h4>
-                <img src="public/webinstitucional.png" alt="foto proyecto 3" width="200">
-                <p>Diseño de una página web con información general de una institución educativa.</p>
-                <p>Categoría: Diseño</p>
-                <a href="detalle.html">Ver detalle</a>
-            </article>
-            <hr>
-
-            <article>
-                <h4>Registro de alumnos</h4>
-                <img src="public/registroa.jpg" alt="foto proyecto 4" width="200">
-                <p>Programa para guardar datos básicos de estudiantes y sus calificaciones.</p>
-                <p>Categoría: Programación</p>
-                <a href="detalle.html">Ver detalle</a>
-            </article>
-            <hr>
-
-            <article>
-                <h4>Plataforma de cursos online</h4>
-                <img src="public/cursos-online.jpg" alt="foto proyecto 5" width="200">
-                <p>Prototipo de plataforma para subir materiales y organizar contenidos de clases.</p>
-                <p>Categoría: Educación</p>
-                <a href="detalle.html">Ver detalle</a>
+        </section>
+        
+        <h4 class="resultados-titulo">Resultados de búsqueda</h4>
+        
+        <section class="cards" id="grilla-proyectos">
+            <article class="proyecto-card">
+                <img src="public/biblioteca.avif" alt="biblioteca" class="card-img" >
+                <div class="card-info">
+                    <h4>Sistema de gestión de biblioteca</h4>
+                    <p>Trabajo práctico donde se desarrolló un sistema básico para registrar libros y préstamos.</p>
+                    <p class="texto-categoria">Categoría: Programación</p>
+                    <a href="detalle.html" class="btn-outline">Ver detalle</a>
+                </div>
             </article>
 
+            <article class="proyecto-card">
+                <img src="public/tareas.jpg" alt="foto proyecto 2" class="card-img">
+                <div class="card-info">
+                    <h4>Aplicación para organización de tareas</h4>
+                    <p>Aplicación sencilla pensada para anotar tareas y fechas de entrega.</p>
+                    <p class="texto-categoria">Categoría: Programación</p>
+                    <a href="detalle.html" class="btn-outline">Ver detalle</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card">
+                <img src="public/webinstitucional.png" alt="foto proyecto 3" class="card-img">
+                <div class="card-info">
+                    <h4>Sitio web institucional</h4>
+                    <p>Diseño de una página web con información general de una institución educativa.</p>
+                    <p class="texto-categoria">Categoría: Diseño</p>
+                    <a href="detalle.html" class="btn-outline">Ver detalle</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card">
+                <img src="public/registroa.jpg" alt="foto proyecto 4" class="card-img">
+                <div class="card-info">
+                    <h4>Registro de alumnos</h4>
+                    <p>Programa para guardar datos básicos de estudiantes y sus calificaciones.</p>
+                    <p class="texto-categoria">Categoría: Programación</p>
+                    <a href="detalle.html" class="btn-outline">Ver detalle</a>
+                </div>
+            </article>
+
+            <article class="proyecto-card">
+                <img src="public/cursos-online.jpg" alt="foto proyecto 5" class="card-img">
+                <div class="card-info">
+                    <h4>Plataforma de cursos online</h4>
+                    <p>Prototipo de plataforma para subir materiales y organizar contenidos de clases.</p>
+                    <p class="texto-categoria">Categoría: Educación</p>
+                    <a href="detalle.html" class="btn-outline">Ver detalle</a>
+                </div>
+            </article>
         </section>
     </main>
-
-    <footer>
-        <hr>
-        <center><p>TP1 - Programación Visual - Grupo 1</p></center>
-    </footer>
 
 </body>
 </html>
