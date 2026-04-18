@@ -19,7 +19,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--texto-negro);
 }
-
+#content {
+    background: linear-gradient(to bottom, #90b5da 0%, #E2E8F0 100%);
+    min-height: 100vh; 
+    margin: 0;
+    background-repeat: no-repeat;
+}
 /* 2. NAV */
 /* Uso flex para acomodar el logo a la izquierda y los links a la derecha */
 .top-nav {

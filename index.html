@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Principal</title>
     <link rel="stylesheet" href="./css/mainstyle.css">
     <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body id="content">
     <header>
-        <h1>Gestion de Proyectos Educativos</h1>
-        <p>Bienvenido Usuario</p>
+        <nav class="top-nav" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="public/logo.png" alt="logo" height="30px">
+                <p>Gestión de Proyectos</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="proyectos.html">Proyectos</a>
+
+            </div>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="proyectos.html">Proyectos</a> |
-        <a href="detalle.html">Detalle del Proyecto</a> |
-        <a href="perfil.html">Perfil</a>
-    </nav>
     <main>
+        <section class="titulo_principal">
+            <h1>Bienvenido a la Plataforma de Gestión de Proyectos Educativos</h1>
+            <p id="descripcion">Esta plataforma fue diseñada para acompañar el desarrollo académico de estudiantes, permitiendo organizar, visualizar y hacer seguimiento de proyectos de manera clara y eficiente. Aquí podrás explorar trabajos prácticos, consultar su estado, acceder a recursos y conocer a los integrantes del equipo, todo en un entorno pensado para facilitar el aprendizaje y la colaboración.</p>
+        </section>
         <section id="states">
             <h2>Estadisticas</h2>
-            <div>
-                <article>
+            <div class="cards">
+                <article class="card-project">
                     <img src="./public/img_index/ges_proyec.png" alt="Proyectos Totales">
                     <h3>5</h3>
                     <p>Proyectos Totales</p>
                 </article>
-                <article>
+                <article class="card-task">
                     <img src="./public/img_index/tareas-pendientes.jpg" alt="Tareas">
                     <h3>2</h3>
                     <p>Tareas Para Hoy</p>
                 </article>
-                <article>
+                <article class="card-message">
                     <img src="./public/img_index/pending.jpg" alt="Mensajes Pendientes">
                     <h3>3</h3>
                     <p>Mensajes Pendientes</p>
@@ -43,35 +57,41 @@
         <hr>
         <section id="news">
             <h2>Novedades</h2>
-            <ul>
+            <ul class="news-content">
                 <li>Juan Ignacio Arze actualizó el proyecto "Sistema de gestión de biblioteca"</li>
                 <li>Se creó el proyecto "Plataforma de cursos online"</li>
                 <li>Sol Daiana Pizarro agregó un nuevo recurso al proyecto "Sitio web institucional"</li>
                 <li>Un docente comentó en "Aplicación para organización de tareas"</li>
             </ul>
         </section>
-        <section>
-            <h2>Objetivos Generales</h2>
-            <p>
-                Desarrollar una plataforma web de gestión de proyectos educativos que permita a estudiantes y docentes organizar, visualizar y dar seguimiento a trabajos académicos de manera eficiente, facilitando la colaboración y el acceso a la información.
-            </p>
-        </section>
-        <section>
-            <h2>Objetivos Especificos</h2>
-            <ul>
-                <li>Permitir la creación y visualización de proyectos educativos con información detallada.</li>
-                <li>Organizar tareas y actividades asociadas a cada proyecto.</li>
-                <li>Facilitar la comunicación entre usuarios mediante mensajes o notificaciones.</li>
-                <li>Mostrar el estado y progreso de los proyectos (en curso o finalizados).</li>
-                <li>Centralizar recursos y materiales educativos dentro de cada proyecto.</li>
-                <li>Brindar una interfaz clara e intuitiva para mejorar la experiencia del usuario.</li>
-            </ul>
-        </section>
+        <hr>
+        <div id="index-goals">
+            <section class="goal">
+                <h2>Objetivos Generales</h2>
+                <p class="goal-content">
+                    Desarrollar una plataforma web de gestión de proyectos educativos que permita a estudiantes y
+                    docentes organizar, visualizar y dar seguimiento a trabajos académicos de manera eficiente,
+                    facilitando la colaboración y el acceso a la información.
+                </p>
+            </section>
+            <section class="goal">
+                <h2>Objetivos Especificos</h2>
+                <ul class="goal-content">
+                    <li>Permitir la creación y visualización de proyectos educativos con información detallada.</li>
+                    <li>Organizar tareas y actividades asociadas a cada proyecto.</li>
+                    <li>Facilitar la comunicación entre usuarios mediante mensajes o notificaciones.</li>
+                    <li>Mostrar el estado y progreso de los proyectos (en curso o finalizados).</li>
+                    <li>Centralizar recursos y materiales educativos dentro de cada proyecto.</li>
+                    <li>Brindar una interfaz clara e intuitiva para mejorar la experiencia del usuario.</li>
+                </ul>
+            </section>
+        </div>
+
     </main>
     <footer>
         <hr>
         <p>TP1 - Programación Visual - Grupo 1</p>
-            <section>
+        <section>
             <h3>Gestion de Proyectos Educativos</h3>
             <p>Plataforma academica para la organizacion y seguimiento de trabajos practicos</p>
         </section>
@@ -85,4 +105,5 @@
     </footer>
     </footer>
 </body>
+
 </html>
