@@ -125,20 +125,3 @@ h2::before {
     background-color: var(--acento); 
     border-radius: 5px; 
 }
-/*FOOTER*/
-footer {
-    background-color: #555;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-footer section {
-    margin-bottom: 10px;
-}
-
-footer p {
-    margin: 0;
-}
