@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Hace que el tamaño de los elementos sea más fácil de controlar */
+}
+
+:root {
+    --bg: #F8FAFC;              /* Fondo general limpio */
+    --nav-bg: #ffffff;          /* Navbar / secciones */
+    --texto-negro: #020a1f;     /* Texto principal */
+    --gris-secundario: #64748B; /* Texto secundario */
+    --acento: #204099;          /* Azul principal */
+    --borde-suave: #E2E8F0;     /* Bordes */
+    --sombra: rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+/* Estilo general de la página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto-negro);
+}
+#content {
+    background: linear-gradient(to bottom, #90b5da 0%, #E2E8F0 100%);
+    min-height: 100vh; 
+    margin: 0;
+    background-repeat: no-repeat;
+}
+/* 2. NAV */
+/* Uso flex para acomodar el logo a la izquierda y los links a la derecha */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--nav-bg);
+    border-bottom: 3px solid var(--texto-negro); /* Línea que separa el menú */
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none; /* Saca el subrayado */
+    color: var(--texto-negro);
+    margin-left: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: var(--acento); /* Cambia de color al pasar el mouse */
+}
+
+/* 3. HEADER */
+/* Centra el título principal */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
