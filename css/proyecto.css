@@ -1,4 +1,7 @@
 
+/* Estilos para la página de proyectos */
+
+/* Uso de variables CSS para mantener consistencia en colores y temas */
 .titulo_principal {
     display: flex;
     flex-direction: column;
@@ -18,10 +21,12 @@ h1 {
     letter-spacing: -4px;
     font-size: 3.5rem;
     margin: 0;
+    /* Transición suave para efectos de hover */
     transition: transform 0.4s ease, color 0.4s ease;
 }
 
 h1:hover {
+    /* Efecto de elevación y cambio de color al pasar el mouse */
     transform: translateY(-8px);
     color: var(--acento);
 }
@@ -42,7 +47,6 @@ h1:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap; 
 }
 
 .categorias select,
@@ -57,7 +61,7 @@ h1:hover {
     outline: none;
 }
 
-/* REQUISITO: Estados :focus y :hover */
+/* Estados :focus y :hover para accesibilidad*/
 .categorias select:hover,
 .categorias input:hover {
     background-color: var(--borde-suave);
@@ -78,6 +82,7 @@ h1:hover {
     font-weight: 600;
     font-size: 0.95rem;
     cursor: pointer;
+    /* Transiciones para efectos de hover y active */
     transition: background 0.3s, transform 0.1s;
 }
 
@@ -86,6 +91,7 @@ h1:hover {
 }
 
 .btn-filtrar:active {
+    /* Efecto de escala al presionar */
     transform: scale(0.95);
 }
 
@@ -99,6 +105,7 @@ h1:hover {
     gap: 12px;
 }
 
+/* Pseudo-elemento ::before para añadir un indicador visual */
 .resultados-titulo::before {
     content: ''; 
     display: block;
@@ -110,6 +117,7 @@ h1:hover {
 
 
 .cards {
+    /* CSS Grid con auto-fit para responsividad automática */
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
@@ -124,10 +132,12 @@ h1:hover {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px var(--sombra);
+    /* Transición para efectos de hover */
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .proyecto-card:hover {
+    /* Efecto de elevación y sombra aumentada */
     transform: translateY(-8px);
     box-shadow: 0 12px 20px var(--sombra);
 }
@@ -135,6 +145,7 @@ h1:hover {
 .card-img {
     width: 100%;
     height: 200px;
+    /* object-fit: cover para mantener proporción sin distorsión */
     object-fit: cover;
     display: block;
 }
@@ -176,6 +187,7 @@ h1:hover {
     border: 2px solid var(--texto-negro);
     padding: 10px 0;
     border-radius: 6px;
+    /* Transición para efectos de hover y active */
     transition: background 0.3s, color 0.3s, transform 0.1s;
 }
 
@@ -185,5 +197,6 @@ h1:hover {
 }
 
 .btn-outline:active {
+    /* Efecto de escala al presionar */
     transform: scale(0.98);
 }

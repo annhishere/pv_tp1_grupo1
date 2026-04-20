@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Hace que el tamaño de los elementos sea más fácil de controlar */
+    box-sizing: border-box; 
 }
 
 :root {
@@ -26,7 +26,7 @@ body {
     background-repeat: no-repeat;
 }
 /* 2. NAV */
-/* Uso flex para acomodar el logo a la izquierda y los links a la derecha */
+
 .top-nav {
     display: flex;
     justify-content: space-between;
