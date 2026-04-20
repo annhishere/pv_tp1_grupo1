@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles</title>
+    <link rel="stylesheet" href="css/detalle.css">
+    <link rel="stylesheet" href="css/mainstyle.css">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="proyectos.html">Proyectos</a> |
-        <a href="detalle.html">Detalle del Proyecto</a> |
-        <a href="perfil.html">Perfil</a>
-    </nav>
-    <main>
-        <h1> Detalles de Proyecto </h1>
-        <section>
-            <p>Titulo: Trabajo Práctico N° 1</p>
-            <p>Fecha de Inicio: 12 de Abril del 2025</p>
-            <p>Autores: Agustina Vasquez - Jonatan Fernando Calapeña Zarate - Juan Ignacio Arze - Esteban Sergio Vera - Sol Daiana Pizarro</p>
+<body id="content">
+    <header>
+        <nav class="top-nav" aria-label="Navegación principal">
+            <div class="logo">
+                <img src="public/logo.png" alt="logo" height="30px">
+                <p>Gestión de Proyectos</p>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="proyectos.html">Proyectos</a>
+
+            </div>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <h1 class="titulo"> Detalles de Proyecto </h1>
+        <section class="bloque informativo">
+            <p><span>Título:</span> Trabajo Práctico N° 1</p>
+            <p><span>Fecha de Inicio:</span> 12 de Abril del 2025</p>
+            <p><span>Autores:</span> Agustina Vasquez - Jonatan Fernando Calapeña Zarate - Juan Ignacio Arze - Esteban Sergio Vera - Sol Daiana Pizarro</p>
         </section>
-        <section>
-            <h2>Descripción</h2>
+        <section class="bloque">
+            <h2 class="subtitulo">Descripción</h2>
             <p>
                 Este proyecto tiene como objetivo introducirnos en el desarrollo web mediante el uso de
                 tecnologías básicas como HTML y CSS. Como estudiantes que recién comenzamos en este ámbito,
@@ -34,17 +44,17 @@
                 desarrolladores frontend.
             </p>
         </section>
-        <section>
-            <h2>Recursos</h2>
-            <ul>
-                <li><a href="https://virtual.unju.edu.ar/mod/resource/view.php?id=475332">Documento_PDf</a></li>
-                <li><a href="https://drive.google.com/file/d/1Z09ldKMAK1N9RB15xurHOt9S96k0Q2hf/view?usp=sharing">Google_Drive</a></li>
-                <li><a href="https://github.com/annhishere/pv_tp1_grupo1">GitHub_Proyecto</a></li>
+        <section class="bloque">
+            <h2 class="subtitulo">Recursos</h2>
+            <ul class="cartas">
+                <li><a href="./src/Trabajo Práctico N° 1.pdf">Documento PDF</a></li>
+                <li><a href="https://drive.google.com/file/d/1Z09ldKMAK1N9RB15xurHOt9S96k0Q2hf/view?usp=sharing">Google Drive</a></li>
+                <li><a href="https://github.com/annhishere/pv_tp1_grupo1">GitHub Proyecto</a></li>
             </ul>
         </section>
-        <section>
-            <h2>Equipo</h2>
-            <ol>
+        <section class="bloque">
+            <h2 class="subtitulo">Equipo</h2>
+            <ol class="lista">
                 <li>Agustina Vasquez - Alumno</li>
                 <li>Jonatan Fernando Calapeña Zarate - Alumno</li>
                 <li>Juan Ignacio Arze - Alumno</li>
